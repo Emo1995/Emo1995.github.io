@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>	
+     
+      #div {
+      	border:solid;
+      	margin: 100px 200px;
+      	height: 200px;
+      	width: 400px;
+      	text-align: center;
+      }
+
+      #signin {
+         border: solid;
+         width: 100px;
+         margin: 60px 100px;
+
+      }
+    
+</style>
+</head>
+<body>
+  
+  <div id="div">
+	  <div>
+	       <a href="#signin">登录</a>
+	       <a href="#signup">注册</a>
+	  </div>
+	  <div id="main-content" >
+	  	 
+	  </div>
+  </div>
+  
+  <script>	
+  function show() {
+		  if (!document.getElementsByTagName) return false;
+		  if (!document.getElementById) return false;
+		alert(111);
+		
+
+		  var links = document.getElementsByTagName("a");
+		  for (var i=0; i<links.length; i++) {
+		    links[i].onmouseover = function() {
+		      alert(this.getAttribute("href"));
+		        var content = document.createElement("div");
+		  content.setAttribute("id","signin");
+          main-content.appendChild(content);
+          alert(222);
+		    }
+		  }
+}
+  addLoadEvent(show);
+
+  function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+
+  </script>
+</body>
+</html>

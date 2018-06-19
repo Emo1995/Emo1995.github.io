@@ -1,0 +1,31 @@
+
+body {
+  font-family: "Helvetica","Arial",sans-serif;
+}
+#navigation a{
+    font-family: "Lucida Grande","Helvetica","Arial",sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+} 
+h1 {
+  font-family: "Georgia","Times New Roman",sans-serif;
+  font: 2.4em normal;
+}
+#content tr td a{
+	text-decoration: none;
+}
+#content td {
+	list-style-type: square;
+	padding: 5px 15px;
+}
+#content p{
+    font-family: "Lucida Grande","Helvetica","Arial",sans-serif;
+    font-size: 15px;
+ }
+ #placeholder{
+margin-left: 6px;
+border: none;
+}
+
+
